@@ -229,8 +229,9 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,visualstudiocode,python
 
-# cookiecutter setup script - can remove after template deployment
-/.setup.sh
-
 # setuptools-scm _version file
 src/pdfunlock/_version.py
+
+# local misc and temp
+/misc/
+/temp/
