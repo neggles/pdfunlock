@@ -9,6 +9,7 @@ from pdfunlock.console import console, err_console
 
 app = typer.Typer()
 
+
 def version_callback(value: bool):
     if value:
         console.print(f"{__package__} v{__version__}")
@@ -22,6 +23,7 @@ def callback(
     ),
 ):
     pass
+
 
 @app.command()
 def cli(
