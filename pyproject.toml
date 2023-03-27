@@ -7,6 +7,9 @@ requires = [
   "setuptools_scm_git_archive",
 ]
 
+[project]
+dynamic = ["version"]
+
 [tool.setuptools_scm]
 write_to = "src/pdfunlock/_version.py"
 
