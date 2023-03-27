@@ -8,7 +8,31 @@ requires = [
 ]
 
 [project]
+name = "pdfunlock"
+description = "A simple command-line tool to unlock PDF files with only an edit password."
+requires-python = ">=3.9"
 dynamic = ["version"]
+authors = [
+  {name = "Andrew Powers-Holmes", email = "aholmes@omnom.net"},
+]
+maintainers = [
+  {name = "Andrew Powers-Holmes", email = "aholmes@omnom.net"},
+]
+license = {file = "LICENSE.md"}
+readme = {file = "README.md", encoding = "utf-8", content-type = "text/markdown"}
+keywords = ["pdf", "unlock", "password", "command-line", "typer"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+documentation = "https://github.com/neggles/pdfunlock/wiki"
+repository = "https://github.com/neggles/pdfunlock"
+issue-tracker = "https://github.com/neggles/pdfunlock/issues"
+
+[project.scripts]
+pdfunlock = "pdfunlock.app:app"
 
 [tool.setuptools_scm]
 write_to = "src/pdfunlock/_version.py"
